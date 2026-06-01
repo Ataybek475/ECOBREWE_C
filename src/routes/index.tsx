@@ -1,4 +1,3 @@
-import { createFileRoute } from "@tanstack/react-router";
 import { useState } from "react";
 import {
   Coffee, Egg, Sprout, Recycle, Shield, Bug, FlaskConical,
@@ -10,18 +9,6 @@ import beforeImg from "@/assets/before.jpg";
 import afterImg from "@/assets/after.jpg";
 import processImg from "@/assets/process.jpg";
 import logoImg from "@/assets/LOGO.png";
-
-export const Route = createFileRoute("/")({
-  head: () => ({
-    meta: [
-      { title: "EcoBrew — Удобрение из кофейного жмыха и яичной скорлупы | Бишкек" },
-      { name: "description", content: "EcoBrew превращает отходы кофеен и кондитерских Бишкека в 100% натуральное удобрение. Социально-предпринимательский проект Enactus Engineering College." },
-      { property: "og:title", content: "EcoBrew — Циркулярная экономика для Бишкека" },
-      { property: "og:description", content: "Спасаем столицу от метановой угрозы. 250+ пачек продано, 7.3 тонны органики переработано в год." },
-    ],
-  }),
-  component: Index,
-});
 
 function Nav() {
   const links = [
